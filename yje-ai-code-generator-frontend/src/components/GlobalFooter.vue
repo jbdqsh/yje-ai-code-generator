@@ -1,0 +1,38 @@
+<template>
+  <a-layout-footer class="footer">
+    <div class="footer-content">
+      <p class="copyright">
+        {{ BRAND.name }} · {{ BRAND.maintainer }} 维护 ·
+        <a
+          href="https://www.codefather.cn"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="author-link"
+        >
+          原项目：程序员鱼皮 / 编程导航
+        </a>
+      </p>
+    </div>
+  </a-layout-footer>
+</template>
+
+<script setup lang="ts">
+import { BRAND } from '@/config/brand'
+</script>
+
+<style scoped>
+.footer {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.copyright {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+</style>
